@@ -2,20 +2,15 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  int days = 30;
-  String name = 'Codepur';
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
-          child: Text('Catalog App'),
-        ),
+        title: Text("Catalog"),
       ),
-      body: Center(
-        child: Text('Wellcome to $days days of flutter by $name'),
-      ),
+      body: Text("Welcome to my self learnig 30 days course"),
       drawer: Drawer(),
     );
   }
